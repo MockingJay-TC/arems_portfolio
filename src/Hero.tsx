@@ -33,6 +33,10 @@ const Hero = () => {
               <h1>into Real Projects</h1>
               <h1>that Deliver Results</h1>
             </div>
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
+              Hi, I'm Arems, a developer with a passion for creating beautiful
+              and functional web applications.
+            </p>
           </div>
         </header>
       </div>
