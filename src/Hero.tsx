@@ -1,3 +1,5 @@
+import Button from "./components/Button";
+import HeroExperience from "./components/HeroModels/HeroExperience";
 import { words } from "./constants";
 const Hero = () => {
   return (
@@ -7,6 +9,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-layout">
+        {/* Left Content */}
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
@@ -37,8 +40,20 @@ const Hero = () => {
               Hi, I'm Arems, a developer with a passion for creating beautiful
               and functional web applications.
             </p>
+            <Button
+              id="hero-button"
+              text="See my work"
+              className="md:w-80 md:h-16 w-60 h-12"
+            />
           </div>
         </header>
+
+        {/* Right Content */}
+        <figure>
+          <div className="hero-3d-layout">
+            <HeroExperience />
+          </div>
+        </figure>
       </div>
     </section>
   );
